@@ -1,0 +1,42 @@
+/*
+ * Copyright 2019 NXP
+ * All rights reserved.
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
+#ifndef LVGL_SUPPORT_H
+#define LVGL_SUPPORT_H
+
+#include <stdint.h>
+/*******************************************************************************
+ * Definitions
+ ******************************************************************************/
+#define LCD_WIDTH             128
+#define LCD_HEIGHT            160
+#define LCD_FB_BYTE_PER_PIXEL 2     //两个字节RGB565
+/* The virtual buffer for DBI panel, it should be ~1/10 screen size. */
+#define LCD_VIRTUAL_BUF_SIZE (LCD_WIDTH * LCD_HEIGHT/10)
+
+/* Select PLL2_MAIN_CLK (528 MHz) as master lpspi clock source */
+#define LPSPI_CLOCK_SOURCE_SELECT (2U)
+/* Clock divider for master lpspi clock source */
+#define LPSPI_CLOCK_SOURCE_DIVIDER (4U)
+
+
+/*******************************************************************************
+ * API
+ ******************************************************************************/
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void lv_port_pre_init(void);
+void lv_port_disp_init(void);
+void lv_port_indev_init(void);
+#if defined(__cplusplus)
+}
+#endif
+
+#endif /*LVGL_SUPPORT_H */

@@ -1,0 +1,24 @@
+{
+  "version": "1.4",
+  "toolchainPath": "e:/Softwares/Program/Embedded/nxp/MCUXpressoIDE_11.8.1_1197/ide/tools",
+  "linkedProjects": [],
+  "trustZoneType": "none",
+  "multicoreType": "none",
+  "debug": {
+    "linkserver": {
+      "device": "MIMXRT1021xxxxx:EVK-MIMXRT1020",
+      "core": "primary"
+    },
+    "pemicro": {},
+    "segger": {}
+  },
+  "projectType": "sdk-freestanding",
+  "sdk": {
+    "boardId": "evkmimxrt1020",
+    "deviceId": "MIMXRT1021xxxxx",
+    "coreId": "core0_MIMXRT1021xxxxx",
+    "version": "",
+    "path": "e:\\Source\\Quark\\boardsource\\I.MXRT1021\\SDK_2_14_0_MIMXRT1021xxxxx",
+    "manifestId": "SDK_2.x_MIMXRT1021xxxxx"
+  }
+}
